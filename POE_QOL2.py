@@ -613,7 +613,7 @@ class MyApplication(pygubu.TkApplication):
             stash_tab=get_stash_tab_content(
                 account_name, league, tab_index, POESESSSID)
         except Exception as e:
-            self.pp.pprint("ERROR : {}".format(str(e)))
+            self.debug_print("ERROR : {}".format(str(e)))
             Msg.showinfo(title=MSG_BOX_TITLE, message=str(e))
             # Lets not continue running
             sys.exit(1)
